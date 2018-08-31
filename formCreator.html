@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="row">
+<div class="col-md-6" id="gauche">
+    <div style="width: 80%;margin-left: 10%;margin-top:10%">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title">
+                    <span class="word">Use</span>
+                    <span class="word">these</span>
+                    <span class="word">buttons</span>
+                    <span class="word">to</span>
+                    <span class="word">create</span>
+                    <span class="word">your</span>
+                    <span class="word">form :</span>
+                </h3>
+            </div>
+
+            <div class=" box-body btn-group align-content-center ">
+                <button class="btn btn-light" id="form">Form</button>
+                <button class="btn btn-light" id="label">Label</button>
+                <button class="btn btn-light" id="input">input</button>
+                <button class="btn btn-light" id="button">Button</button>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="box box-primary" id="form_text">
+            <div class="box-header with-border">
+                <h3 class="box-title">Label options </h3>
+            </div>
+
+            <div class="box-body form-group col-lg-12">
+                <label class="control-label">Name of the form :</label>
+                <input class="form-control" id="form_input" type="text">
+            </div>
+
+            <div class="box-body form-group col-lg-12">
+                <label class="control-label">Method of the form :</label>
+                <select class="form-control" id="form_input2">
+                    <option value="GET">Get</option>
+                    <option value="POST">Post</option>
+                </select>
+            </div>
+
+            <div class="box-footer col-lg-12">
+                <button class="btn btn-info pull-right" id="form_ok">Insert</button>
+                <button class="btn btn-danger " id="form_no">Cancel</button>
+            </div>
+        </div>
+
+        <!-- LABEL -->
+        <div class="box box-primary" id="label_text">
+            <div class="box-header with-border">
+                <h3 class="box-title">Label options </h3>
+            </div>
+
+            <div id="label_div" class="box-body form-group col-lg-12">
+                <label class="control-label">Text of the label :</label>
+                <input class="form-control" id="label_input" type="text">
+                <span id="empty_label" class="help-block"> The label can't be empty !</span>
+            </div>
+
+            <div class="box-footer col-lg-12">
+                <button class="btn btn-info pull-right " id="label_ok">Insert</button>
+                <button class="btn btn-danger " id="label_no">Cancel</button>
+            </div>
+        </div>
+
+        <!-- INPUT -->
+        <div class="box box-primary" id="input_text">
+            <div class="box-header with-border">
+                <h3 class="box-title">Input options : </h3>
+            </div>
+
+            <div class="box-body form-group col-lg-12">
+                <label class="control-label">Type of the input :</label>
+                <select class="form-control" id="input_input2">
+                    <option value="text">Text</option>
+                    <option value="password">Password</option>
+                </select>
+            </div>
+
+            <div class="box-body form-group col-lg-12">
+                <label class="control-label">Place holder of the input :</label>
+                <input class="form-control" id="input_input" type="text">
+            </div>
+
+            <div class="box-footer col-lg-12">
+                <button class="btn btn-info pull-right " id="input_ok">Insert</button>
+                <button class="btn btn-danger " id="input_no">Cancel</button>
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="box box-primary" id="button_text">
+            <div class="box-header with-border">
+                <h3 class="box-title">Button options : </h3>
+            </div>
+            <div class="box-body form-group col-lg-12">
+                <label class="control-label">Text of the button :</label>
+                <input class="form-control" id="button_input" type="text">
+            </div>
+            <div class="box-footer col-lg-12">
+                <button class="btn btn-info pull-right " id="button_ok">Insert</button>
+                <button class="btn btn-danger " id="button_no">Cancel</button>
+            </div>
+            <div class="box-footer col-lg-12">
+                <span class="btn" style="cursor: auto">Or :</span>
+                <button class="btn btn-success pull-right" id="button_auto">Insert submit and reset buttons directly
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="col-md-6" id="droite">
+    <div style="width: 80%;margin-left: 10%;margin-top:10%">
+        <div class="col-md-10">
+            <div class="box box-primary center-block">
+                <div class="box-header with-border">
+                    <h3 id="forms_name" class="box-title">My form : </h3>
+                </div>
+
+                <div class="box-body form-group ">
+                    <form id="my_form">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="dis_anim_div">
+    <div class="btn-group">
+        <button id="close_disable" class="btn btn-dark"><strong> X </strong></button>
+        <button id="animations_disable" class="btn btn-dark">Disable animations ?</button>
+    </div>
+</div>
+
+<script src="public/js/jquery.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
